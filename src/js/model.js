@@ -30,6 +30,7 @@ function createRecipeObject(data) {
     };
 }
 
+
 export let loadRecipe = async function showRecipe(id) {
     try {
         let resData = await AJAX(`${API_URL}recipes/${id}?key=${KEY}`);
